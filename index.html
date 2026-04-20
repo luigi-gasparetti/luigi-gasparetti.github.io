@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proposta de TCC - [Seu Título Aqui]</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --accent-color: #3498db;
+            --text-color: #333;
+            --bg-color: #f4f7f6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Barra de Header */
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 1rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav {
+            max-width: 800px;
+            margin: 0 auto;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* Container Principal */
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h1 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+        }
+
+        /* Informações do Aluno */
+        .info-section {
+            background: #eef2f3;
+            padding: 1.5rem;
+            border-left: 5px solid var(--accent-color);
+            margin-bottom: 2rem;
+            border-radius: 4px;
+        }
+
+        .info-item {
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .info-label {
+            font-weight: bold;
+            color: var(--secondary-color);
+            width: 150px;
+            display: inline-block;
+        }
+
+        /* Descrição */
+        .description-section h2 {
+            color: var(--secondary-color);
+        }
+
+        .description-text {
+            text-align: justify;
+            color: #444;
+            white-space: pre-line; /* Mantém quebras de linha */
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Responsividade para celulares */
+        @media (max-width: 600px) {
+            main {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            .info-label {
+                display: block;
+                margin-bottom: 2px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>Proposta de Trabalho de Conclusão de Curso</nav>
+    </header>
+
+    <main>
+        <h1>Título do Projeto</h1>
+
+        <section class="info-section">
+            <div class="info-item">
+                <span class="info-label">Luigi Gasparetti</span>
+            </div>
+            <div class="info-item">
+                <span class="info-label">Nº USP:</span> 13672791
+            </div>
+            <div class="info-item">
+                <span class="info-label">Orientador:</span> Prof. Dr. Paulo Andre Vechiatto de Miranda
+            </div>
+            <div class="info-item">
+                <span class="info-label">Instituição:</span> IME-USP
+            </div>
+        </section>
+
+        <section class="description-section">
+            <h2>Descrição do Projeto</h2>
+            <div class="description-text">
+                Resumo vem aqui.
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2026 - Departamento de Ciência da Computação
+    </footer>
+
+</body>
+</html>
