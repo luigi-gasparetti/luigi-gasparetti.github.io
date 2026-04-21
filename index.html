@@ -105,6 +105,34 @@
                 margin-bottom: 2px;
             }
         }
+
+        /* Estilo para o link do PDF */
+        .pdf-link-container {
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .pdf-btn {  
+            display: inline-flex;
+            align-items: center;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s ease;
+        }
+
+        .pdf-btn:hover {
+            background-color: var(--primary-color);
+        }
+
+        .pdf-btn::before {
+            content: "📄"; /* Ícone simples de documento */
+            margin-right: 8px;
+        }
+
     </style>
 </head>
 <body>
@@ -114,7 +142,7 @@
     </header>
 
     <main>
-        <h1>Título do Projeto</h1>
+        <h1>Gambito - Desenvolvimento de um jogo roguelike de Xadrez</h1>
 
         <section class="info-section">
             <div class="info-item">
@@ -127,14 +155,14 @@
                 <span class="info-label">Orientador:</span> Prof. Dr. Paulo Andre Vechiatto de Miranda
             </div>
             <div class="info-item">
-                <span class="info-label">Instituição:</span> IME-USP
+                <span class="info-label">IME-USP</span> Bacharelado em Ciência da Computação
             </div>
         </section>
 
         <section class="description-section">
-            <h2>Gambito - Desenvolvimento de um jogo roguelike de Xadrez</h2>
+            <h2>OBJETIVO</h2>
             <div class="description-text">
-                O objetivo principal desse trabalho é desenvolver um jogo em Unity do começo ao m
+                O objetivo principal desse trabalho é desenvolver um jogo em Unity do começo ao fim
                 de xadrez do gênero roguelike, integrando as regras determinísticas do xadrez a mecânicas
                 de aleatoriedade, progressão de habilidades e balanceamento dinâmico. Busca-se criar
                 um ambiente de jogo coeso que explore a tomada de decisão sob incerteza, mantendo a
@@ -146,11 +174,17 @@
                 caso sobre o desenvolvimento de jogos nacionais, extraindo lições técnicas e criativas da
                 produção brasileira recente nesse gênero.
             </div>
+
+            <div class="pdf-link-container">
+                <a href="proposta.pdf" class="pdf-btn" target="_blank">
+                    Acesse a Proposta Completa (PDF)
+                </a>
+            </div>
         </section>
     </main>
 
     <footer>
-        &copy; 2026 - Departamento de Ciência da Computação
+        &copy; 2026 - IME-USP - Proposta de TCC por Luigi Gasparetti
     </footer>
 
 </body>
